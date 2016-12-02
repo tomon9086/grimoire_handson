@@ -1,0 +1,23 @@
+<goml>
+	<import-material typeName="phong" src="./index.sort"/>
+	<material id="earth-material" texture="earth_day.jpg" type="phong" color="#fff" specular="#555" ambient="#000" sun="n(1,-1.1,-1.2)" power="1"/>
+	<material id="moon-material" texture="moon.jpg" type="phong" color="#fff" specular="#555" ambient="#000" sun="n(1,-1.1,-1.2)" power="1"/>
+	<scene>
+        <camera class="camera" near="0.01" far="400.0" aspect="1.5" position="0,11.54,20" rotation="-0.5236,0,0">
+            <camera.components>
+                <MouseCameraControl />
+            </camera.components>
+        </camera>
+        <mesh id="earth" geometry="sphere" scale="4,4,4" position="0,0,0" rotation="0,0,0" material="#earth-material">
+        <mesh.components>
+        	<Rotation speed="5" />
+    	</mesh.components>
+		</mesh>
+        <mesh id="moon" geometry="sphere" scale="1,1,1" position="0,0,0" rotation="0,0,0" material="#moon-material">
+    	<mesh.components>
+        	<Rotation speed="0.183" initialValue="-90" />
+        	<Revolution radius="10" speed="0.183" />
+    	</mesh.components>
+		</mesh>
+    </scene>
+</goml>
