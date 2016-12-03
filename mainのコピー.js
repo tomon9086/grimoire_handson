@@ -68,8 +68,8 @@ gr.registerComponent('Revolution', {
 
 function onSpeedChange(v){
 	// console.log(v.value);
-	gr("#main")("#earth")("Rotation").setAttribute("speed", v.value / 25 * 5 * Math.PI / 180);
-	gr("#main")("#moon")("Rotation").setAttribute("speed", v.value / 25 * 0.183 * Math.PI / 180);
+	gr("#main")("#earth")("Rotation").setAttribute("speed", v.value / 25 * 5);
+	gr("#main")("#moon")("Rotation").setAttribute("speed", v.value / 25 * 0.183);
 	gr("#main")("#moon")("Revolution").setAttribute("speed", v.value / 25 * 0.183);
 }
 

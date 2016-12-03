@@ -1,9 +1,9 @@
 <goml>
 	<import-material typeName="phong" src="./index.sort"/>
-	<material id="earth-material" texture="earth_day.jpg" type="phong" color="#fff" specular="#555" ambient="#000" sun="n(1,-1.1,-1.2)" power="1"/>
-	<material id="moon-material" texture="moon.jpg" type="phong" color="#fff" specular="#555" ambient="#000" sun="n(1,-1.1,-1.2)" power="1"/>
+	<material id="earth-material" texture="earth_day.jpg" type="phong" color="#fff" specular="#555" ambient="#000" sun="n(1,0,-1)" power="1"/>
+	<material id="moon-material" texture="moon.jpg" type="phong" color="#fff" specular="#555" ambient="#000" sun="n(1,0,-1)" power="1"/>
 	<scene>
-        <camera class="camera" near="0.01" far="400.0" aspect="1.5" position="0,11.54,20" rotation="-0.5236,0,0">
+        <camera class="camera" near="0.01" far="400.0" aspect="1.5" position="0,5.17638,19.32" rotation="-0.2618,0,0">
             <camera.components>
                 <MouseCameraControl />
             </camera.components>
