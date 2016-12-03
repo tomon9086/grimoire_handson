@@ -1,4 +1,4 @@
-<goml>
+<goml height="fit">
 	<import-material typeName="phong" src="./index.sort"/>
 	<material id="earth-material" texture="earth_day.jpg" type="phong" color="#fff" specular="#555" ambient="#000" sun="n(1,0,-1)" power="1"/>
 	<material id="moon-material" texture="moon.jpg" type="phong" color="#fff" specular="#555" ambient="#000" sun="n(1,0,-1)" power="1"/>
